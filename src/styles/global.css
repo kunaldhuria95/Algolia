@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+    color:rgb(83, 83, 83);
+}
+ul,li{
+    list-style-type: none;
+}
+
+body {
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.mainContainer {
+    width: 80%;
+    margin: 0 auto;
+}
+h4{
+    font-size: 13px;
+}
+p{
+    font-size: 10px;
+}

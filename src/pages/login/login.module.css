@@ -1,0 +1,24 @@
+.loginContainer{
+  padding: 30px 10px;
+  border:1px solid grey;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap:10px;
+  border-radius: 5px;
+  background: #F6F6EF;
+  
+}
+.loginContainer input{
+    padding: 5px;
+    width: 200px;
+
+}
+.loginContainer button{
+    padding: 10px 20px;
+    margin-top: 10px;
+    background: transparent;
+    cursor: pointer;
+    border: 1px solid rgb(196, 147, 95);
+    font-weight: bold;
+}
