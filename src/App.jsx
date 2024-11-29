@@ -4,7 +4,7 @@ import {
   RouterProvider,
   Outlet
 } from "react-router-dom";
-import Home from './pages/Home/Home';
+import Home from './pages/home/Home';
 import Navbar from './components/Navbar/Navbar';
 import Login from './pages/login/login';
 import './styles/global.css'
