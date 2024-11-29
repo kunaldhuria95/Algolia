@@ -8,7 +8,7 @@ import Home from './pages/home/Home';
 import Navbar from './components/Navbar/Navbar';
 import Login from './pages/login/Login';
 import './styles/global.css'
-import Item from './pages/item/item';
+import Item from './pages/item/item.jsx';
 
 function App() {
 
