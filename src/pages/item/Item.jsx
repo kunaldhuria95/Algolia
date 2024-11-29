@@ -6,7 +6,7 @@ import RecordItem from '../../components/recordItem/RecordItem';
 import styles from './item.module.css'
 const Item = () => {
     const { id } = useParams()
-    const { data, isLoading } = useQuery({
+    const { data, isLoading,isError } = useQuery({
         queryKey: ['item',id],
         queryFn: async () => {
             const data = await axios.get(`http://hn.algolia.com/api/v1/items/${id}`)
@@ -15,7 +15,10 @@ const Item = () => {
     })
 
     if (isLoading) {
-        return <>Loading</>
+        return <>Loading....</>
+    }
+    if(isError){
+        return <>Error</>
     }
 
     return (

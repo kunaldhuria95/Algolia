@@ -43,7 +43,7 @@ const Home = () => {
         return baseURL + params.toString();
     };
 
-    const { data: posts, isLoading } = useQuery({
+    const { data: posts, isLoading,isError } = useQuery({
         queryKey: ['posts', tags, page, by, query],
         queryFn: async () => {
             const data = await axios.get(buildURL())
@@ -66,6 +66,9 @@ const Home = () => {
 
     if (isLoading) {
         return <>Loading.....</>
+    }
+    if(isError){
+        return <>Something Went Wrong.....</>
     }
 
     return (
