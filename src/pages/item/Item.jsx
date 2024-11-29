@@ -9,7 +9,7 @@ const Item = () => {
     const { data, isLoading,isError } = useQuery({
         queryKey: ['item',id],
         queryFn: async () => {
-            const data = await axios.get(`http://hn.algolia.com/api/v1/items/${id}`)
+            const data = await axios.get(`https://hn.algolia.com/api/v1/items/${id}`)
             return data
         }
     })
