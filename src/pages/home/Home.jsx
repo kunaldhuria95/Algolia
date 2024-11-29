@@ -32,9 +32,9 @@ const Home = () => {
     const buildURL = () => {
         let baseURL;
         if (by === "relevance")
-            baseURL = "http://hn.algolia.com/api/v1/search?";
+            baseURL = "https://hn.algolia.com/api/v1/search?";
         if (by === "date")
-            baseURL = "http://hn.algolia.com/api/v1/search_by_date?";
+            baseURL = "https://hn.algolia.com/api/v1/search_by_date?";
         const params = new URLSearchParams({
             tags: tags || undefined,
             query: query,
